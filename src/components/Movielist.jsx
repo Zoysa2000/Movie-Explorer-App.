@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import {ImgOverlay} from "image-overlay-react";
 import 'image-overlay-react/dist/index.css';
 import {useDispatch} from "react-redux";
 import {detailStore} from "../utilities/actionSlice.jsx";
