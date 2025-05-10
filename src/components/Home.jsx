@@ -21,8 +21,7 @@ function Home() {
                     className='relative z-10 flex flex-col  text-center px-5 justify-center items-center w-full md:w-[85%] max-w-[800px] text-white h-full mx-auto gap-2'>
                     <h1 className="max-w-screen-sm title">Unlimited movies, TV shows, and more.</h1>
                     <p className="subtitle md:py-[12px]">Watch anywhere. Cancel anytime.</p>
-                    <p className="md:text-[1.2rem] text-[18px] font-light">Ready to watch? Enter your email to create or
-                        restart your membership.</p>
+                    <p className="md:text-[1.2rem] text-[18px] font-light">Ready to watch? Search your favourite movies and Lets enjoy it</p>
                  <SearchBar/>{/*re usable component*/}
 
                 </div>

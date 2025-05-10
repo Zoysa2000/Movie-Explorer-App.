@@ -19,7 +19,7 @@ const Display = () => {
         if (selectedMovie) {
             const fetchTrailer = async (movieTitle) => {
                 const response = await fetch(
-                    `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${movieTitle}+trailer&type=video&key=AIzaSyCLF7N0KulN4oOS2br77eb51ybKCZRhomc`
+                    `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${movieTitle}+trailer&type=video&key=AIzaSyCqEUBgnpVCS16OOoq5hu89LarAOTe46z4`
                 );
                 const data = await response.json();
                 if (data.items.length > 0) {
@@ -92,18 +92,21 @@ const Display = () => {
 
                         <p className="text-[20px] mt-3 text-justify">{selectedMovie.movie.overview}</p>
                     </div>
-                    <div className="md:w-[48%] w-full">
-                        <div className="my-3">
-                            <iframe
-                                width="100%"
-                                height="400"
-                                src={trailerUrl}
-                                title="YouTube trailer"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                            ></iframe>
-                        </div>
+                    <div className="relative md:w-[48%] w-full">
+                        <img
+                            className="w-full h-full"
+                            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+                            alt="TV Image"
+                        />
+                        <iframe
+                            className="absolute top-[47.5%] left-1/2 w-[73%] h-[54%] -translate-x-1/2 -translate-y-1/2"
+                            src={trailerUrl}
+                            title="YouTube trailer"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
                     </div>
+
                 </div>
             </div>
 

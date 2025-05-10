@@ -12,7 +12,7 @@ const Upcoming = () => {
     const navigate = useNavigate();
     useEffect(() => {
         // Fetch movies and set a loading state
-        fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=f50ba9b5b96af22ce97328b1bb12a676&language=en-US`)
+        fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=5fe3767eabd4d5ca825563bb86d6e8ae&language=en-US`)
             .then((res) => res.json())
             .then((data) => {
                 setMovieList(data.results.slice(0, 18));
@@ -27,6 +27,7 @@ const Upcoming = () => {
         return () => clearTimeout(timer);
     }, []);
     const handleDiscoverClick = (movie) => {
+        // Dispatching an action to the Redux store to update the movie detail state
         dispatch(
             detailStore({
                 id: movie.id,
