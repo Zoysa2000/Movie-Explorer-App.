@@ -1,4 +1,4 @@
-# 🚀 Movie Explorer – Discover Your Favorite Films https://681f65dee296b82f39e2a8ee--ornate-otter-1f92a7.netlify.app/
+# 🚀 Movie Explorer – Discover Your Favorite Films https://681f8a3032fbf14a5c5f3e73--neon-peony-8fec6a.netlify.app/
 
 MTube is a modern and intuitive movie discovery web app that lets users explore the latest trending films, search for favorites, view detailed movie info, and watch trailers — all in one place. Powered by TMDB and YouTube APIs, MTube offers a smooth browsing experience with a user-friendly interface, personalized search, and real-time data fetching.
 
@@ -53,6 +53,7 @@ The login screen validates user input against default credentials (username: adm
 ![Screenshot (1332)](https://github.com/user-attachments/assets/15e09fa1-1941-4b9e-b5fe-aad6a43c2919)
 
 
+![Screenshot (1343)](https://github.com/user-attachments/assets/0dfa5e4d-3d1a-427a-ae24-be29a5bb6fbf)
 
   ✨ Fetching Upcoming Movies throught TMDB API and show the details.
 
@@ -77,7 +78,9 @@ The login screen validates user input against default credentials (username: adm
     
    ![Screenshot (1336)](https://github.com/user-attachments/assets/e97f449b-d463-4f2c-89a4-5ef444ba4662)
 
-
+   ✨Global State managment for Redux
+   
+![Screenshot (1344)](https://github.com/user-attachments/assets/0e190499-d1d8-4847-b3f4-f6789dfeec0c)
 
 
 
