@@ -1,0 +1,17 @@
+
+.red-btn {
+  @apply bg-[#e50914]  mt-3 md:mt-0 px-[10px] md:px-[40px]  flex items-center justify-center rounded-sm text-base md:text-[1.625rem] font-light;
+}
+.title {
+  @apply text-[1.75rem] md:text-[3.125rem] leading-[1.1] font-semibold tracking-wide;
+}
+
+.subtitle {
+  @apply text-[1.125rem] md:text-[1.625rem] font-light; 
+}
+body{
+  background-color: black;
+}
+.border {
+  @apply border-t-[8px] border-[#222];
+}
