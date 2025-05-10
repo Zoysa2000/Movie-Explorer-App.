@@ -56,7 +56,7 @@ const Display = () => {
                     <h1 className="max-w-screen-sm title">{selectedMovie.movie.title}</h1>
                     <p className="md:py-[12px] md:text-[30px]">Watch anywhere. Cancel anytime.</p>
                     <p className="md:text-[1.2rem] md:text-[25px] font-light">
-                        Ready to watch? Enter your email to create or restart your membership.
+                        Ready to watch? Search your favourite movies and Lets enjoy it.
                     </p>
                     <div className="hidden md:block">
                         <ReactStars
@@ -81,7 +81,7 @@ const Display = () => {
 
             <div className="border">
                 <div
-                    className="flex md:flex-row flex-col text-white justify-between py-10 md:gap-[40px] max-w-[1300px] px-5 mx-auto items-center">
+                    className="flex md:flex-row flex-col text-white justify-between py-5 md:gap-[40px] max-w-[1300px] px-5 mx-auto items-center">
                     <div className="md:w-[52%]">
                         <h1 className="title text-2xl font-bold text-white">
                             {selectedMovie.movie.title}{' '}
@@ -91,6 +91,20 @@ const Display = () => {
                         </h1>
 
                         <p className="text-[20px] mt-3 text-justify">{selectedMovie.movie.overview}</p>
+                        <div className="flex gap-5 mt-4">
+                            <img
+                                src={`https://image.tmdb.org/t/p/original${imageUrl}`}
+                                alt="Poster"
+                                className="md:h-[12rem] h-[10rem] w-[8rem] rounded object-cover"
+                            />
+                            <img
+                                src={`https://image.tmdb.org/t/p/original${selectedMovie.movie.backdropPath}`}
+                                alt="Backdrop"
+                                className="md:h-[12rem] h-[10rem] w-[8rem] rounded object-cover"
+                            />
+                        </div>
+
+
                     </div>
                     <div className="relative md:w-[48%] w-full">
                         <img
